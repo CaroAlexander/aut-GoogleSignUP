@@ -5,6 +5,7 @@ import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 import net.thucydides.core.annotations.Steps;
+import org.openqa.selenium.JavascriptException;
 
 public class PruebaDefinition {
 
@@ -13,7 +14,9 @@ public class PruebaDefinition {
 	
 	@Given("^Como un usuario que no tiene cuenta de Email$")
 	public void como_un_usuario_que_no_tiene_cuenta_de_Email() throws Exception {
-		PruebaSteps.IngresarCrearCuenta();
+
+			PruebaSteps.IngresarCrearCuenta();
+
 	}
 
 	@When("^Quiero crear una Cuenta Con mis datos personales$")
@@ -36,10 +39,10 @@ public class PruebaDefinition {
 	public void como_un_usuario_que_tiene_cuenta_de_Email() throws Exception {
 		PruebaSteps.IngresarCrearCuenta();
 	}
-	
+
 	@Then("^Validar que la cuenta no se pueda Crear \"([^\"]*)\"$")
 	public void validar_que_la_cuenta_no_se_pueda_Crear(String arg1) throws Exception {
-	 
+
 	}
 
 
