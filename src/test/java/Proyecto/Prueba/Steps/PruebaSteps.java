@@ -15,7 +15,6 @@ public class PruebaSteps {
 
 		}
 
-		
 	}
 	@Step
 	public void DatosPersonales() {

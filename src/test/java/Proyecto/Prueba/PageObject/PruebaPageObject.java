@@ -8,9 +8,7 @@ import net.serenitybdd.core.pages.WebElementFacade;
 import net.thucydides.core.annotations.DefaultUrl;
 
 @DefaultUrl("https://accounts.google.com/signup/v2/webcreateaccount?flowName=GlifWebSignIn&flowEntry=SignUp")
-// https://www.utest.com/
-//https://accounts.google.com/signup/v2/webcreateaccount?flowName=GlifWebSignIn&flowEntry=SignUp
-//https://accounts.google.com/
+
 public class PruebaPageObject extends PageObject{
 	
 	/*
@@ -29,12 +27,14 @@ public class PruebaPageObject extends PageObject{
 	@FindBy(name="Passwd")
 	public WebElementFacade TXT_PASSWD;
 	
-	@FindBy(xpath="//*[@id=\"accountDetailsNext\"]")
+	@FindBy(name="ConfirmPasswd")
 	public WebElementFacade TXT_PASSWDCONF;
+	////*[@id="accountDetailsNext"]
 	
-	@FindBy(xpath="//*[@id=\"accountDetailsNext\"]/span/span")
+	@FindBy(xpath="//*[@id=\"accountDetailsNext\"]//span")
 	public WebElementFacade BTN_SIGUIENTE;
-	
+	////*[@id="accountDetailsNext"]/span/span
+
 	@FindBy(id="headingText")
 	public WebElementFacade LBL_CONFIRMACION;
 	
