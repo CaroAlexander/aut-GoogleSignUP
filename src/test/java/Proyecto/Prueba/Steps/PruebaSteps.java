@@ -33,6 +33,9 @@ public class PruebaSteps {
 	@Step
 	public void ValidacionCrearCuenta() {
 
+		PruebaPageObject.EscribirPhone();
+		PruebaPageObject.InteractuarBtonPhoneSiguiente();
+		PruebaPageObject.EscribirCODE();
 
 	}
 	
