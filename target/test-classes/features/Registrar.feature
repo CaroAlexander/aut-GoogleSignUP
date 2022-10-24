@@ -7,4 +7,3 @@ Feature: Realizar Creacion de Cuenta de Correo
     When Quiero crear una Cuenta Con mis datos personales
     	And Un passwd correcto
     Then Validar que la cuenta se pueda Crear
-    
