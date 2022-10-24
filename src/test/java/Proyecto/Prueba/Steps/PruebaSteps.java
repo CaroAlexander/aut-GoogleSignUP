@@ -36,6 +36,12 @@ public class PruebaSteps {
 		PruebaPageObject.EscribirPhone();
 		PruebaPageObject.InteractuarBtonPhoneSiguiente();
 		PruebaPageObject.EscribirCODE();
+		PruebaPageObject.VerifyCODE();
+		try {
+			Thread.sleep(3000);
+		} catch (InterruptedException e) {
+			throw new RuntimeException(e);
+		}
 
 	}
 	

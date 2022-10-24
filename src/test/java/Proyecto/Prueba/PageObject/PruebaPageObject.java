@@ -14,9 +14,10 @@ public class PruebaPageObject extends PageObject{
 	/*
 	 * Definicion de variables
 	 * */
-	String TXT_CONTRASENA="Loquequieraponer2020";
-	String TXT_PHONE="3142270420";
-	String TXT_CODE="0000";
+	String TXT_CONTRASENA="Loquequierapon7732020";
+	//String TXT_PHONE="3142270420";
+	String TXT_PHONE="3214402421";
+	String TXT_CODE="Hola ATH, Gracias por la oportunidad =D";
 
 
 	@FindBy(id="firstName")
@@ -51,18 +52,21 @@ public class PruebaPageObject extends PageObject{
 	@FindBy(id="code")
 	public WebElementFacade TXT_VERIFICATIONCODE;
 
+	@FindBy(xpath="//span[contains(text(),'Verificar')]")
+	public WebElementFacade BTN_VerifyCode;
+
 	
 	public void EscribirNombre() {
-		TXT_NOMBRES.sendKeys("Nombre de Prueba");
+		TXT_NOMBRES.sendKeys("NombrePrueba33");
 		}
 
 	public void EscribirApellidos() {
-		TXT_APELLIDOS.sendKeys("Apellido Prueba");
+		TXT_APELLIDOS.sendKeys("ApellidoPrueba331");
 	}
 
 
 	public void EscribirUsername() {
-		TXT_USERNAME.sendKeys("userprueba20202");
+		TXT_USERNAME.sendKeys("userprueba.30232");
 		
 	}
 
@@ -93,6 +97,10 @@ public class PruebaPageObject extends PageObject{
 
 	public void EscribirCODE() {
 		TXT_VERIFICATIONCODE.sendKeys(TXT_CODE);
+	}
+
+	public void VerifyCODE() {
+		BTN_VerifyCode.click();
 	}
 
 }
